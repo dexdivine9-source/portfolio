@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adeniyi Divine — Software Engineer Portfolio
 
-## Getting Started
+> **High-performance Developer Hub** showcasing my engineering projects, skills, and direct contact channels. Built with a Netlify-first architecture.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ⚡ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Core** | Next.js 15 (App Router), React |
+| **Language** | TypeScript (Strict Mode) |
+| **Styling** | Tailwind CSS v4, Lucide React (Icons), Inter (Font) |
+| **Animations** | Framer Motion (Fade-in scroll interactions, hover scaling) |
+
+---
+
+## 🚀 Key Features
+
+- **Full-Spectrum Hero**: Bold, parallax-animated intro with "Available for opportunities" badge and primary call-to-action buttons.
+- **Skills Cloud**: 12 keyword-optimized, animated tech badges for quick recruiter scanning.
+- **My Journey**: Narrative section with 4 interactive stat cards detailing projects, tenure, and technologies.
+- **Netlify Gateway Architecture**: Instead of just GitHub links, a premium, glowing "Master Card" hub that routes visitors directly to my live production environment ([Netlify Teams Page](https://app.netlify.com/teams/dexdivine9/projects)).
+- **Contact Bento Grid**: Frictionless, one-tap connection grid. Direct URLs to WhatsApp, Telegram, Email, LinkedIn, and X — no forms, no spam.
+- **100% Mobile Responsive**: Specifically tuned for 390px (iPhone) viewports. Complex grids fall back gracefully to 2x2 or vertically stacked layouts on mobile.
+- **Dark Mode**: High-contrast "Midnight" theme (`neutral-950`) with Framer Motion-powered subtle cyan accents.
+
+---
+
+## 📁 System Architecture
+
+```text
+portfolio-site/
+├── app/
+│   ├── layout.tsx                # Root layout, Inter font, SEO metadata
+│   ├── page.tsx                  # Main assembly page (Hero, Journey, Bento Grid)
+│   └── globals.css               # Midnight theme, custom scrollbars
+├── components/
+│   ├── NetlifyGatewayCard.tsx    # Premium routing card for live projects
+│   └── ProjectCard.tsx           # GitHub repository cards
+└── types/
+    └── github.ts                 # Type definitions for GitHub API fetch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Local Setup & Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+First, install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+Run the development server:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Component Customization
 
-## Deploy on Vercel
+The portfolio is designed for "efficient laziness" — manage all critical data in one place. Open `app/page.tsx` and edit these constants:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Variable | Controls |
+|----------|----------|
+| `NETLIFY_URL` | The destination link for the main Netlify Gateway Card. |
+| `SKILLS` | The array of technologies listed in the animated Skills Cloud. |
+| `contactLinks` | The URLs, labels, and icons for the bottom Bento Grid. |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📬 Connectivity
+
+*   **WhatsApp**: [+234 808 032 7610](https://wa.me/2348080327610)
+*   **Email**: [adeniyidivine34@gmail.com](mailto:adeniyidivine34@gmail.com)
+*   **Telegram**: [@Divine_dex](https://t.me/Divine_dex)
+*   **LinkedIn**: [divine-adeniyi](https://www.linkedin.com/in/divine-adeniyi-5836633a1)
+*   **X / Twitter**: [@dex_divine](https://x.com/dex_divine)
+*   **Netlify Hub**: [Live Projects](https://app.netlify.com/teams/dexdivine9/projects)
+
+---
+*© 2026 Adeniyi Divine. Engineered with Next.js & Framer Motion.*
